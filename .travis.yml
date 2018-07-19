@@ -14,6 +14,7 @@ env:
 
 install:
   - gpg --version
+  - ls -la $HOME/.gnupg
   - rm -rf $HOME/protoc
   - wget $PROTOC_RELEASE
   - unzip $PROTOC_PKG -d $PROTOC_TARGET
